@@ -34,7 +34,7 @@ public class Company implements BaseOperations {
                     company.list ();
                     break;
                 case 2:
-                    company.inssert ();
+                    company.insert ();
                     break;
                 case 3:
                     company.update ();
@@ -84,7 +84,7 @@ public class Company implements BaseOperations {
     }
 
     @Override
-    public void inssert() {
+    public void insert() {
         try {
             conn = Database.getConnection ();
             System.out.println ("Creating statement...");

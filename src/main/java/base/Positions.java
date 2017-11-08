@@ -35,7 +35,7 @@ public class Positions implements BaseOperations {
                     positions.list ();
                     break;
                 case 2:
-                    positions.inssert ();
+                    positions.insert ();
                     break;
                 case 3:
                     positions.update ();
@@ -81,7 +81,7 @@ public class Positions implements BaseOperations {
 
 
     @Override
-    public void inssert() {
+    public void insert() {
         try {
             conn = Database.getConnection ();
             System.out.println ("Creating statement...");

@@ -33,7 +33,7 @@ public class Employees implements BaseOperations {
                     employees.list ();
                     break;
                 case 2:
-                    employees.inssert ();
+                    employees.insert ();
                     break;
                 case 3:
                     employees.update ();
@@ -101,7 +101,7 @@ public class Employees implements BaseOperations {
     }
 
     @Override
-    public void inssert() {
+    public void insert() {
         try {
             conn = Database.getConnection ();
             System.out.println ("Creating statement...");

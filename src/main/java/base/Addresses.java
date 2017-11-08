@@ -35,7 +35,7 @@ public class Addresses implements BaseOperations{
                     addresses.list ();
                     break;
                 case 2:
-                    addresses.inssert ();
+                    addresses.insert ();
                     break;
                 case 3:
                     addresses.update ();
@@ -87,7 +87,7 @@ public class Addresses implements BaseOperations{
     }
 
     @Override
-    public void inssert() {
+    public void insert() {
         try {
             conn = Database.getConnection ();
             System.out.println ("Creating statement...");
